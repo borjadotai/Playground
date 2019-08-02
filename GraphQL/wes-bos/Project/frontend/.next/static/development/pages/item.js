@@ -25062,7 +25062,7 @@ var Item = function Item(_ref) {
 
 /***/ }),
 
-/***/ 6:
+/***/ 4:
 /*!*****************************!*\
   !*** multi ./pages/item.js ***!
   \*****************************/
@@ -25087,5 +25087,5 @@ module.exports = dll_18682c416555df0bf0b9;
 
 /***/ })
 
-},[[6,"static/runtime/webpack.js"]]]));;
+},[[4,"static/runtime/webpack.js"]]]));;
 //# sourceMappingURL=item.js.map
