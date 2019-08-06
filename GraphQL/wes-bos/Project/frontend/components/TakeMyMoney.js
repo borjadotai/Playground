@@ -3,8 +3,10 @@ import StripeCheckout from "react-stripe-checkout";
 import { Mutation } from "react-apollo";
 import Router from "next/router";
 import NProgress from "nprogress";
+import PropTypes from "prop-types";
 import gql from "graphql-tag";
 import calcTotalPrice from "../lib/calcTotalPrice";
+import Error from "./ErrorMessage";
 import User, { CURRENT_USER_QUERY } from "./User";
 
 const CREATE_ORDER_MUTATION = gql`
@@ -59,7 +61,7 @@ class TakeMyMoney extends React.Component {
                   image={
                     me.cart.length && me.cart[0].item && me.cart[0].item.image
                   }
-                  stripeKey="pk_test_Vtknn6vSdcZWSG2JWvEiWSqC"
+                  stripeKey="pk_test_bXxDkl2Pq1tgMY1e5DDIKXyx"
                   currency="USD"
                   email={me.email}
                   token={res => this.onToken(res, createOrder)}
